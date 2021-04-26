@@ -1,0 +1,97 @@
+<html >
+    <link rel="stylesheet" href="../css/style.css">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</script>
+<script type="text/javascript" src="js/jquery.simplyscroll.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+	<script language="javascript" src="js/script.js"></script>
+<link rel="stylesheet" href="js/jquery.simplyscroll.css" media="all" type="text/css">
+<link rel="shorcut icon" type="image/x-ico" href="phpThumb_generated_thumbnailico">
+<title>Shop Thời Trang</title>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<!-- Query slide show Sản phẩm chính  -->
+<script type="text/javascript">
+	(function($) {
+		$(function() {
+			$(".slideshow").simplyScroll({orientation:'vertical',customClass:'vert'});
+		});
+	})(jQuery);
+	$(document).ready(function () {
+		$.lockfixed(".left", {offset: {top: 20, bottom: 470} });
+	});
+</script>
+<!-- The end query   -->
+
+</head>
+
+<body>
+<!-- thanh menu top-->
+<div class="dn">
+	<div class="user">  <!--Box chức năng đăng ký / đăng nhập  -->
+		<ul>
+			<li>
+				<a href="khach-hang.html"><i class="fas fa-user"></i></a>
+                <a href="khach-hang.html"> Chào </a>
+                <a href="index.php?controller=logout">/Đăng xuất</a>
+				
+                <a href="dang-nhap.html">Đăng nhập</a> /
+                <a href="dang-ky.html">Đăng ký</a>
+                
+                </a> </li>
+
+		</ul>
+	</div>
+	<div class="search">
+		<form method="GET">
+			<div class="search-box" style="">
+				<input name="ten_sp"  style="border:0px;  text-align:left; line-height:30px;"type="text" placeholder="Nhập từ khóa tìm kiếm" />
+				<a href="">
+				<input class="search_btn" type="submit" value="search" style="height: 28px; width: 55px">
+				</a>
+			</div> 
+			<input type="hidden" name="controller" value="search">
+		</form>
+		
+	</div>
+	<div class="cart">  <!-- box giỏ hàng  -->
+		<a href="gio-hang.html">
+			<div id="shopping-cart">
+				<i title="Click để xem giở hàng" class="fas fa-shopping-cart"></i>
+			</div>
+			<div id="thongbao">
+		<span  style="text-align:center; line-height:30px; color:#FFF; margin-left:10px;" class="tb">Có <strong style="color:#006633">
+			
+		</strong> sản phẩm</span>
+			</div>
+	</div> 
+	
+</div>
+<!--menu-->
+<div class="wrapper">
+	
+<div class="main">
+
+ 	
+</div>
+<!-- Footer -->
+	
+	<!-- Nút lên đầu trang-->
+	<a class="btn-top" href="javascript:void(0);" title="Top" style="display: inline;"><img style="width: 30px" src="https://1.bp.blogspot.com/-KzRQvTg-RsY/VVru5Zsk6kI/AAAAAAAARQA/om7gk_vC_8I/s300/up-arrow-icon.png"></a>
+	<!--chatbox-->
+	<button class="nut-mo-chatbox" onclick="moForm()"><img style="width: 40px" src="https://www.flaticon.com/svg/static/icons/svg/3814/3814507.svg"></button>
+	 <div class="Chatbox" id="myForm">
+	   <form action="" class="form-container">
+		 <h1>SPORT.VN</h1>
+		<label style="padding-top: 100px" for="msg">Xin chào! Chúng tôi có thể giúp gì cho bạn?</label>
+		 <textarea placeholder="Bạn hãy nhập lời nhắn.." name="msg" required></textarea>
+		<button type="submit" class="btn">Gửi</button>
+		 <button type="button" class="btn nut-dong-chatbox" onclick="dongForm()">Đóng</button>
+	   </form>
+</div>
+
+</body>
+</html>
